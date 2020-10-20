@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+DELETE</title>
+<style>
+body
+{
+  background-color:#800000;
+  
+}
+form
+{
+font-size:25px;
+  font-family:"comic sans ms";
+  color:black;
+}
+.container
+{
+  background-color:#A52A2A;
+  
+    /*position:fixed;
+    top: 50%;
+    left: 50%;
+    width:40em;
+    height:55em;
+    margin-top: -20em; 
+    margin-left: -25em; 
+    border: 1px solid #ccc;
+  /*set to a negative number 1/2 of your width*/ /*set to a negative number 1/2 of your height----  change these to centre on the page...*/
+margin-right:20%;
+margin-left:20%;
+}
+#txt
+{
+  height:25px;
+    font-size:14pt;
+    font-family:"comic sans ms";
+}
+.sub
+{
+  height:50px;
+  width:300px;
+  color:white; 
+  background-color:pink;
+  font-size:30px;
+  background-image: url("bk.jpeg");
+}
+</style>
+</head>
+<body>
+<center><div class="container">
+<h2>Details of Old Librarian</h2>
+
+<form method="POST" action="libinsert.php">
+   Name:<br>
+    <input id="txt" type="text" name="lname">
+  <br>
+   Librarian ID<br>
+   <input id="txt" type="number" name="lid" >
+   <BR>
+   Librarian Password:<br>
+   <input type="password" id="txt" name="lpswd">
+   <br>
+   Librarian Location:<br>
+   <input type="password" id="txt" name="lloc">
+   <br><br>
+  <input class="sub" type="submit" value="Submit" name="Submit">
+  <!-- MEMBERSHIP START AND END DATE-- WHEN THEY SEARCH FOR MEMBER, DOB, MEMBERSHIP END , PASSWORD-->
+ 
+</form> 
+</div></center>
+</body>
+</html>
+

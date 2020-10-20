@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<style type="text/css">
+
+	h1{
+		font-family: 'Lobster', cursive;
+        color: pink;
+        font-size: 60px;
+	}
+.container{
+	background-color:   #e7eff6;
+	font-family: 'Mali', cursive;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.form_code {
+	margin-left: 10px;
+
+}
+
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container1 .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.form_code .search{
+	display: block;
+	width: 30%;
+	margin-top: 2rem;
+	margin-left:15px;
+	margin-right: auto;
+	border-radius: 2rem;
+	padding: .6rem;
+	border: none;
+	outline: none;
+}
+
+	
+.form_code button {
+	width: 10%;
+	display: inline-block;
+	text-align: center;
+	background-color:pink;
+    padding: .6rem;
+    margin-top: 1rem;
+    margin: 1rem auto 0rem;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: .3rem;
+	
+}
+</style>
+<body>
+	<h1>Search Books and Periodicals</h1>
+	<div class="container">
+		
+		<form class="form_code">
+			<h2><b>Search</b></h2>
+			<label class="container1">Books
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">Periodicals
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+			
+			<h2><b>By</b></h2>
+			<label class="container1">Title
+  <input type="radio" name="radio1">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">Author(for books)
+  <input type="radio" name="radio1">
+  <span class="checkmark"></span>
+</label><label class="container1">Publisher
+  <input type="radio" name="radio1">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">Genre
+  <input type="radio" name="radio1">
+  <span class="checkmark"></span>
+</label>
+<label class="container1">Volume
+  <input type="radio" name="radio1">
+  <span class="checkmark"></span>
+</label>
+			
+             <input class="search" list="myDatalist" placeholder="Enter name to search"> 
+  				<datalist id="myDatalist"> 
+    				
+  				</datalist><br>
+  				<button type="submit">Search</button>
+		</form>
+		
+		
+	</div>

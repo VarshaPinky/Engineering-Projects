@@ -1,0 +1,85 @@
+{% extends "home.html"%}
+{% load static %}
+
+{%block content2 %}
+<div id = "msd" class="w3-display-container w3-content w3-center w3-hide-small" style="max-width:1500px">            
+          
+            <div id="content">  </div>
+            <div id="image">  </div>
+            <div id="video">  </div>
+</div>
+<script>
+  init("msd");
+  function init(){
+      console.log("in init");
+      xhr = new XMLHttpRequest; 
+      if(xhr)
+      { xhr.open("GET","{% static 'contents.txt' %}");
+        xhr.onreadystatechange = getContent;        
+        
+        xhr.send();
+      } 
+    }
+    function getContent(){
+    
+    if(xhr.readyState=="4"&&xhr.status==200){
+        
+        //document.getElementById("image").innerHTML=xhr.responseText;
+        document.getElementById("content").innerHTML=xhr.responseText;
+        document.getElementById("video").innerHTML= xhr.responseText;
+        document.getElementById("image").innerHTML= xhr.responseText;
+        setTimeout(getcontent, 7000); 
+      }
+    }
+
+    function getcontent(){
+        console.log("In getContent");
+        xhr.onreadystatechange=showContent;        
+        xhr.open("GET","{% static 'content.txt' %}");
+        xhr.send();
+        
+    }
+    function showContent(){
+    
+        if(xhr.readyState==4 && xhr.status==200){
+          var res=xhr.responseText;
+          document.getElementById('content').innerHTML=res;
+          console.log(res);
+          setTimeout(getimage,5000);
+        }
+    }
+    //TODO:Write code to fetch audio
+    function getimage(){
+        console.log("In getimage");
+        xhr.onreadystatechange=showImg;        
+        xhr.open("GET","{% static 'image.txt' %}");
+        xhr.send();
+
+    }
+    function showImg()
+    {
+      if(xhr.readyState == 4 && xhr.status == 200)
+      {
+        document.getElementById("image").innerHTML = xhr.responseText;
+        setTimeout(getVideo,4000);
+      }
+      
+    }
+    function getVideo(){
+      console.log("In getVideo");
+      xhr.onreadystatechange=playvideo;
+      xhr.open("GET","{% static 'video.txt' %}");
+      xhr.send();
+      
+      
+      
+    }
+    function playvideo(){
+      if(xhr.readyState==4 && xhr.status==200){
+        document.getElementById("video").innerHTML=xhr.responseText;
+        document.getElementById("video").muted=true;
+      }
+    }
+</script>
+
+{% endblock %}

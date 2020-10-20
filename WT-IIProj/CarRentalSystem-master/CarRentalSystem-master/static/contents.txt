@@ -1,0 +1,2 @@
+
+<img src='/static/loading.gif' width="250px" height="270px"/>

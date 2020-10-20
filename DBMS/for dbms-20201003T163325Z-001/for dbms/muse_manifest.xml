@@ -1,0 +1,98 @@
+<manifest alg="2" build="2017.0.4.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="page2.com" resolutions="1x" timestamp="1553091975549">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="search.css" crc="4193191577" ref="search"/>
+    <file name="search-book.css" crc="4193191577" ref="search-book"/>
+    <file name="index.css" crc="111715919" ref="index"/>
+    <file name="dashboard.css" crc="42565130" ref="dashboard"/>
+    <file name="recommend-a-book.css" crc="4193191577" ref="recommend-a-book"/>
+    <file name="about-us.css" crc="4193191577" ref="about-us"/>
+    <file name="add-a-member.css" crc="4193191577" ref="add-a-member"/>
+    <file name="insert.css" crc="129509052" ref="insert"/>
+    <file name="login.css" crc="144852799" ref="login"/>
+    <file name="librarain.css" crc="4193191577" ref="librarain"/>
+    <file name="requested-books.css" crc="4193191577" ref="requested-books"/>
+    <file name="add-a-book.css" crc="4193191577" ref="add-a-book"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="dashboard:login:index:insert:recommend-a-book:search:librarain:about-us:search-book:add-a-member:requested-books:add-a-book"/>
+    <file name="museutils.js" crc="4216313831" ref="dashboard:login:index:insert:recommend-a-book:search:librarain:about-us:search-book:add-a-member:requested-books:add-a-book"/>
+    <file name="whatinput.js" crc="86476730" ref="dashboard:login:index:insert:recommend-a-book:search:librarain:about-us:search-book:add-a-member:requested-books:add-a-book"/>
+    <file name="museconfig.js" crc="4177022356" ref="dashboard:login:index:insert:recommend-a-book:search:librarain:about-us:search-book:add-a-member:requested-books:add-a-book"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4110862005" ref="dashboard:login:index:insert"/>
+    <file name="webpro.js" crc="4143865194" ref="dashboard:login"/>
+    <file name="musewpslideshow.js" crc="3781122836" ref="dashboard"/>
+    <file name="jquery.museoverlay.js" crc="4030747646" ref="dashboard"/>
+    <file name="touchswipe.js" crc="4200445185" ref="dashboard"/>
+    <file name="jquery.watch.js" crc="460461809" ref="dashboard:login:index:insert:recommend-a-book:search:librarain:about-us:search-book:add-a-member:requested-books:add-a-book"/>
+    <file name="require.js" crc="3951022091" ref="dashboard:login:index:insert:recommend-a-book:search:librarain:about-us:search-book:add-a-member:requested-books:add-a-book"/>
+    <file name="form_check.php" crc="154010282" ref="login"/>
+    <file name="form_throttle.php" crc="266437015" ref="login"/>
+    <file name="form_process.php" crc="512629711" ref="login"/>
+    <file name="form-u1275.php" crc="95352867" ref="login"/>
+  </folder>
+  <folder name="images">
+    <file name="library books pic.jpg" crc="4111674842" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="dracula.jpg" crc="452706069" seo="true" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="dashboard"/>
+    <file name="eragon.jpg" crc="435696045" seo="true" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="julius caesar.jpg" crc="423521792" seo="true" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="dashboard"/>
+    <file name="update.jpg" crc="167283499" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="books-u1599-fr.jpg" crc="4171549820" ref="dashboard"/>
+    <file name="search.jpg" crc="182576857" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="delete.jpg" crc="460725377" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="libr.jpg" crc="3878096153" ref="login">
+      <caption webpage="login" alt=""/>
+    </file>
+    <file name="begin.jpg" crc="3938205359" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u1475-5.png" crc="366966507" ref="index"/>
+    <file name="person icon-u1479-fr.jpg" crc="62240318" ref="index"/>
+    <file name="librar.jpg" crc="262398109" ref="insert">
+      <caption webpage="insert" alt=""/>
+      <caption webpage="insert" alt=""/>
+      <caption webpage="insert" alt=""/>
+    </file>
+    <file name="membe.jpg" crc="321821642" ref="insert">
+      <caption webpage="insert" alt=""/>
+      <caption webpage="insert" alt=""/>
+      <caption webpage="insert" alt=""/>
+    </file>
+    <file name="book.jpg" crc="3870156359" ref="insert">
+      <caption webpage="insert" alt=""/>
+      <caption webpage="insert" alt=""/>
+      <caption webpage="insert" alt=""/>
+    </file>
+  </folder>
+  <file name="dashboard.html" crc="101188029" seo="true" mt="1553091939854" redirect="true"/>
+  <file name="login.html" crc="3918779853" seo="true" mt="1552824419311" redirect="true"/>
+  <file name="index.html" crc="40989985" seo="true" mt="1552828248103" redirect="true"/>
+  <file name="insert.html" crc="4231198565" seo="true" mt="1553091939957" redirect="true"/>
+  <file name="recommend-a-book.html" crc="427695481" seo="true" mt="1552803982414" redirect="false"/>
+  <file name="search.html" crc="72153725" seo="true" mt="1552803966582" redirect="false"/>
+  <file name="librarain.html" crc="438118362" seo="true" mt="1552804028649" redirect="false"/>
+  <file name="about-us.html" crc="4270710495" seo="true" mt="1552804110343" redirect="false"/>
+  <file name="search-book.html" crc="513823786" seo="true" mt="1552804069872" redirect="false"/>
+  <file name="add-a-member.html" crc="3999481207" seo="true" mt="1552804034648" redirect="false"/>
+  <file name="requested-books.html" crc="170224422" seo="true" mt="1552804058827" redirect="false"/>
+  <file name="add-a-book.html" crc="3900656069" seo="true" mt="1552804039720" redirect="false"/>
+</manifest>
